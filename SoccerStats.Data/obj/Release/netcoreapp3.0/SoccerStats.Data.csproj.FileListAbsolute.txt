@@ -1,0 +1,13 @@
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.Data\obj\Release\netcoreapp3.0\SoccerStats.Data.csprojAssemblyReference.cache
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.Data\obj\Release\netcoreapp3.0\SoccerStats.Data.AssemblyInfoInputs.cache
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.Data\obj\Release\netcoreapp3.0\SoccerStats.Data.AssemblyInfo.cs
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.Data\bin\Release\netcoreapp3.0\SoccerStats.Data.deps.json
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.Data\bin\Release\netcoreapp3.0\SoccerStats.Data.runtimeconfig.json
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.Data\bin\Release\netcoreapp3.0\SoccerStats.Data.runtimeconfig.dev.json
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.Data\bin\Release\netcoreapp3.0\SoccerStats.Data.dll
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.Data\bin\Release\netcoreapp3.0\SoccerStats.Data.pdb
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.Data\bin\Release\netcoreapp3.0\SoccerStats.Domain.dll
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.Data\bin\Release\netcoreapp3.0\SoccerStats.Domain.pdb
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.Data\obj\Release\netcoreapp3.0\SoccerStats.Data.csproj.CopyComplete
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.Data\obj\Release\netcoreapp3.0\SoccerStats.Data.dll
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.Data\obj\Release\netcoreapp3.0\SoccerStats.Data.pdb

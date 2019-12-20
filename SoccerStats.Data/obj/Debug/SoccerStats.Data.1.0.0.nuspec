@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SoccerStats.Data</id>
+    <version>1.0.0</version>
+    <authors>SoccerStats.Data</authors>
+    <owners>SoccerStats.Data</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.0">
+        <dependency id="SoccerStats.Domain" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Mvc.Core" version="2.2.5" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="3.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging" version="3.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Console" version="3.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.Data\bin\Debug\netcoreapp3.0\SoccerStats.Data.runtimeconfig.json" target="lib\netcoreapp3.0\SoccerStats.Data.runtimeconfig.json" />
+    <file src="C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.Data\bin\Debug\netcoreapp3.0\SoccerStats.Data.dll" target="lib\netcoreapp3.0\SoccerStats.Data.dll" />
+  </files>
+</package>

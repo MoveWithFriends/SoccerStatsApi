@@ -19,6 +19,13 @@ namespace SoccerStats.Data
             _context = context;
         }
 
+        public async Task<List<MatchMoment>> GetMatchMoments()
+        {
+            return await _context.MatchMoments
+                .AsNoTracking()
+                .ToListAsync();
+        }
+
         public async Task<List<Player>> GetPlayersAsync()
         {
             return await _context.Players
@@ -31,6 +38,7 @@ namespace SoccerStats.Data
         {
             IQueryable<Team> query = _context.Teams
                 .Include(p => p.Players);
+            
 
             query = query.Where(c => c.Id == id);
 

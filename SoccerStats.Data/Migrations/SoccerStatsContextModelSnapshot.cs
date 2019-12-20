@@ -54,7 +54,7 @@ namespace SoccerStats.Data.Migrations
                             AwayGoals = 0,
                             HomeGoals = 1,
                             HomeTeam = true,
-                            MatchDate = new DateTime(2019, 12, 4, 16, 35, 9, 513, DateTimeKind.Local).AddTicks(7943),
+                            MatchDate = new DateTime(2019, 12, 13, 14, 34, 36, 559, DateTimeKind.Local).AddTicks(5016),
                             TeamId = 1
                         });
                 });
@@ -233,6 +233,9 @@ namespace SoccerStats.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
+
+                    b.Property<byte[]>("Picture")
+                        .HasColumnType("varbinary(max)");
 
                     b.Property<int>("TeamId")
                         .HasColumnType("int");

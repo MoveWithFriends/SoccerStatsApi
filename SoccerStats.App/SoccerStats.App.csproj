@@ -22,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SoccerStats.BusinessLogic\SoccerStats.BusinessLogic.csproj" />
     <ProjectReference Include="..\SoccerStats.Data\SoccerStats.Data.csproj" />
     <ProjectReference Include="..\SoccerStats.Domain\SoccerStats.Domain.csproj" />
   </ItemGroup>

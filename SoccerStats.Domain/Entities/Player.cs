@@ -1,4 +1,5 @@
-﻿using SoccerStats.Domain.Entities;
+﻿using Microsoft.AspNetCore.Http;
+using SoccerStats.Domain.Entities;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
@@ -16,6 +17,8 @@ namespace SoccerStats.Domain
 
         [Required]
         public int BackNumber { get; set; }
+
+        public byte[] Picture { get; set; }
 
         public List<PlayerMatchResult> MatchResults { get; set; }
 

@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using SoccerStats.Data;
 using SoccerStats.Domain;
 using SoccerStats.Domain.DTO;
+using SoccerStats.Domain.DTO.GetDto;
 using SoccerStats.Domain.Services;
+using System.Threading.Tasks;
 
 namespace SoccerStats.App.Controllers
 {
@@ -16,98 +12,48 @@ namespace SoccerStats.App.Controllers
     [ApiController]
     public class PlayersController : ControllerBase
     {
-        private readonly SoccerStatsContext _context;
+        private readonly IAppService _logic;
 
-        public PlayersController(SoccerStatsContext context)
+        public PlayersController(IAppService logic)
         {
-            _context = context;
 
+            _logic = logic;
         }
 
-        // GET: api/Players
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Player>>> GetPlayers()
-        {
-            return await _context.Players.ToListAsync();
-        }
 
-        // GET: api/Players/5
+        //First Screen: Team Screen
+
+        //Gets: api/Players/2
         [HttpGet("{id}")]
-        public async Task<ActionResult<Player>> GetPlayer(int id)
+        public async Task<ActionResult<GetTeamPlayerDto>> GetPlayersOnTeam(int id)
         {
-            var player = await _context.Players.FindAsync(id);
-
-            if (player == null)
-            {
-                return NotFound();
-            }
-
-            return player;
+            var results = await _logic.GetTeamPlayers(id);
+            return results;
         }
 
-        // PUT: api/Players/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
-        // more details see https://aka.ms/RazorPagesCRUD.
+
+        //Post: api/Players 
+        [HttpPost]
+        public async Task<ActionResult<GetTeamPlayerDto>> PostPlayer([FromForm] PlayerDto player)
+        {
+            await _logic.PostPlayer(player);
+            return StatusCode(201);
+        }
+
+        //Put: api/Players/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutPlayer(int id, Player player)
         {
-            if (id != player.Id)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(player).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!PlayerExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
-        }
-
-        // POST: api/Players
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
-        // more details see https://aka.ms/RazorPagesCRUD.
-        [HttpPost]
-        public async Task<ActionResult<Player>> PostPlayer(Player player)
-        {
-            _context.Players.Add(player);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetPlayer", new { id = player.Id }, player);
+            var results = await _logic.PutPlayer(id, player);
+            return results;
         }
 
         // DELETE: api/Players/5
         [HttpDelete("{id}")]
         public async Task<ActionResult<Player>> DeletePlayer(int id)
         {
-            var player = await _context.Players.FindAsync(id);
-            if (player == null)
-            {
-                return NotFound();
-            }
-
-            _context.Players.Remove(player);
-            await _context.SaveChangesAsync();
-
-            return player;
-        }
-
-        private bool PlayerExists(int id)
-        {
-            return _context.Players.Any(e => e.Id == id);
+            var results = await _logic.DeletePlayer(id);
+            return results;
         }
     }
 }

@@ -113,3 +113,16 @@ C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.App\bin\Debug\netco
 C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.App\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.App\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.App\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.App\obj\Debug\netcoreapp3.0\SoccerStats.App.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.App\bin\Debug\netcoreapp3.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.App\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.App\bin\Debug\netcoreapp3.0\SoccerStats.BusinessLogic.dll
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.App\bin\Debug\netcoreapp3.0\SoccerStats.BusinessLogic.pdb
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.App\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.App\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.App\bin\Debug\netcoreapp3.0\System.IO.Pipelines.dll
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.App\bin\Debug\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.App\bin\Debug\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.App\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.App\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.App\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll

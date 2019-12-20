@@ -10,6 +10,7 @@ namespace SoccerStats.Data
         void AddPlayer(Player player);
         Task<bool> AddTeam(Team team);
         Task<List<Match>> GetMatchesAsync();
+        Task<List<MatchMoment>> GetMatchMoments();
         Task<List<Player>> GetPlayersAsync();
         Task<Team> GetPlayersByTeamAsync(int id);
     }

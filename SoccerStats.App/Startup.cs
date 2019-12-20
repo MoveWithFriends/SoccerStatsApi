@@ -25,6 +25,7 @@ namespace SoccerStats.App
 
             services.AddScoped<ISoccerStatsRepository, SoccerStatsRepository>();
             services.AddScoped<ITransformer, Transformer>();
+            services.AddScoped<IAppService, AppService>();
 
             services.AddDbContext<SoccerStatsContext>(
                 options => options.UseSqlServer(
@@ -46,6 +47,8 @@ namespace SoccerStats.App
             app.UseRouting();
 
             app.UseAuthorization();
+            
+            
 
             app.UseEndpoints(endpoints =>
             {

@@ -11,5 +11,6 @@
     <WebStackScaffolding_LayoutPageFile />
     <WebStackScaffolding_DbContextTypeFullName>SoccerStats.Data.SoccerStatsContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
+    <NameOfLastUsedPublishProfile>SoccerStatsApp - Web Deploy</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

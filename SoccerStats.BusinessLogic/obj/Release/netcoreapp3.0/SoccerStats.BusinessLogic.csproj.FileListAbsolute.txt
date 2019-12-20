@@ -1,0 +1,13 @@
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.BusinessLogic\obj\Release\netcoreapp3.0\SoccerStats.BusinessLogic.csprojAssemblyReference.cache
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.BusinessLogic\obj\Release\netcoreapp3.0\SoccerStats.BusinessLogic.AssemblyInfoInputs.cache
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.BusinessLogic\obj\Release\netcoreapp3.0\SoccerStats.BusinessLogic.AssemblyInfo.cs
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.BusinessLogic\bin\Release\netcoreapp3.0\SoccerStats.BusinessLogic.deps.json
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.BusinessLogic\bin\Release\netcoreapp3.0\SoccerStats.BusinessLogic.dll
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.BusinessLogic\bin\Release\netcoreapp3.0\SoccerStats.BusinessLogic.pdb
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.BusinessLogic\bin\Release\netcoreapp3.0\SoccerStats.Data.dll
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.BusinessLogic\bin\Release\netcoreapp3.0\SoccerStats.Domain.dll
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.BusinessLogic\bin\Release\netcoreapp3.0\SoccerStats.Data.pdb
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.BusinessLogic\bin\Release\netcoreapp3.0\SoccerStats.Domain.pdb
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.BusinessLogic\obj\Release\netcoreapp3.0\SoccerStats.BusinessLogic.csproj.CopyComplete
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.BusinessLogic\obj\Release\netcoreapp3.0\SoccerStats.BusinessLogic.dll
+C:\Users\NickSluiters\source\repos\SoccerStatsAP\SoccerStats.BusinessLogic\obj\Release\netcoreapp3.0\SoccerStats.BusinessLogic.pdb
