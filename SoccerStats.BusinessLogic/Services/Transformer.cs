@@ -55,5 +55,25 @@ namespace SoccerStats.Domain.Services
                 Moment = moment.Moment.ToString(),
             };
         }
+        public static T Trans<T>(string value)
+            where T : struct
+        {
+            bool enumParseResult = false;
+            T resultInputType = default(T);
+            enumParseResult = Enum.TryParse<T>(value, out resultInputType);
+            return resultInputType;
+        }
+        public MatchMoment Transform(MatchMomentDto moment)
+        {
+
+            return new MatchMoment
+            {
+                MatchId = moment.MatchId,
+                PlayerId = moment.PlayerId,
+                TimeStamp = moment.TimeStamp,
+                Moment = Trans<MomentsEnum>(moment.Moment)
+            };
+
+        }
     }
 }

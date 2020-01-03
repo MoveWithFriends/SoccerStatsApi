@@ -19,12 +19,14 @@ namespace SoccerStats.App.Controllers
         private readonly SoccerStatsContext _context;
         private readonly ISoccerStatsRepository _repository;
         private readonly ITransformer _transformer;
+        private readonly IAppService _logic;
 
-        public MatchMomentsController(SoccerStatsContext context, ITransformer transformer, ISoccerStatsRepository repository)
+        public MatchMomentsController(SoccerStatsContext context, ITransformer transformer, ISoccerStatsRepository repository, IAppService logic)
         {
             _context = context;
             _repository = repository;
             _transformer = transformer;
+            _logic = logic;
         }
 
         // GET: api/MatchMoments
@@ -80,17 +82,13 @@ namespace SoccerStats.App.Controllers
 
             return NoContent();
         }
-
         // POST: api/MatchMoments
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
         [HttpPost]
-        public async Task<ActionResult<MatchMoment>> PostMatchMoment(MatchMoment matchMoment)
+        public async Task<int> PostMatchMoment(MatchMomentDto matchMoment)
         {
-            _context.MatchMoments.Add(matchMoment);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetMatchMoment", new { id = matchMoment.Id }, matchMoment);
+            return await _logic.PostMatchMoment(matchMoment);
         }
 
         // DELETE: api/MatchMoments/5

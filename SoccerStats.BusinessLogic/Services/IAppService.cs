@@ -18,5 +18,6 @@ namespace SoccerStats.Domain.Services
         Task<IActionResult> PutTeam(int id, Team team);
         Task<ActionResult<Team>> DeleteTeam(int id);
         Task<ActionResult<IEnumerable<Team>>> GetTeam();
+        Task<int> PostMatchMoment(MatchMomentDto moment);
     }
 }

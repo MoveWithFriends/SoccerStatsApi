@@ -8,6 +8,7 @@ namespace SoccerStats.Domain.Services
     {
         TeamPlayerDto Transform(Team model);
         MatchMomentDto Transform(MatchMoment moment);
+        MatchMoment Transform(MatchMomentDto moment);
         GetTeamPlayerDto TransformToGet(Team model);
     }
 }

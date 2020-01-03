@@ -65,6 +65,17 @@ namespace SoccerStats.Domain.Services
             }
             return 0;
         }
+        public async Task<int> PostMatchMoment(MatchMomentDto moment)
+        {
+            if(moment.Moment != null)
+            {
+                var result = _transformer.Transform(moment);
+                _context.MatchMoments.Add(result);
+                await _context.SaveChangesAsync();
+                return result.Id;
+            }
+            return 0;
+        }
 
 
         public async Task<IActionResult> PutPlayer(int id, Player player)
